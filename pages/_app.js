@@ -4,28 +4,6 @@ import { ThemeProvider } from 'styled-components';
 import theme from '../src/theme';
 import GlobalStyle from '../src/theme/GlobalStyle';
 
-// const GlobalStyle = createGlobalStyle`
-// :root{
-//   --blue: #00a1fe;
-// }
-
-// * {
-//   margin: 0;
-//   padding: 0;
-//   box-sizing: border-box;
-//   font-family: Helvetica, Arial, sans-serif;
-// }
-//   body {
-//     overflow: scroll;
-//   }
-// `;
-
-// const theme = {
-//   colors: {
-//     primary: '#0070f3',
-//   },
-// };
-
 export default function App({ Component, pageProps }) {
   return (
     <>
