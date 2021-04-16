@@ -1,10 +1,33 @@
-import styled from 'styled-components'
-
-const Title = styled.h1`
-  font-size: 50px;
-  color: ${({ theme }) => theme.colors.primary};
-`
+import React from 'react';
+import Box from '../src/components/foundation/layout/Box';
+import Grid from '../src/components/foundation/layout/Grid';
+import TreeItem from '../src/components/TreeItem';
+import { TreeContextProvider } from '../src/context/tree';
+import data from '../src/data.json';
 
 export default function Home() {
-  return <Title>My page</Title>
+  return (
+    <div>
+      <Box
+        flex="1"
+        display="flex"
+        flexWrap="wrap"
+        flexDirection="column"
+        justifyContent="space-between"
+      >
+        <Grid.Container
+          marginTop={{
+            xs: '32px',
+            md: '75px',
+          }}
+        >
+          <TreeContextProvider>
+            {Object.values(data).map((node) => (
+              <TreeItem node={node} key={node.id} />
+            ))}
+          </TreeContextProvider>
+        </Grid.Container>
+      </Box>
+    </div>
+  );
 }
