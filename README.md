@@ -1,6 +1,6 @@
 ### Veja a demonstração [AQUI](https://checkboxlist.vercel.app/)
 
-<img src="https://github.com/mubreda/checkboxlist/blob/main/public/images/Capture.JPG">
+<img src="https://github.com/mubreda/checkboxlist/blob/main/public/images/Capture.jpg">
 
 
 # 🚀 Como executar o projeto
